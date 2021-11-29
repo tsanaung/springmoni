@@ -16,7 +16,7 @@ function article(api_en) {
     .then((res)=>res.json())
     .then((data)=>{
         let a = data[0];
-        console.log(data);
+        // console.log(data);
 
         let og_title = document.createElement('meta');
         og_title.setAttribute('property', 'og:title');
