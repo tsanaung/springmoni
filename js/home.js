@@ -1,19 +1,15 @@
-import {home_articles} from 'https://tsanaung.github.io/springmoni/js/config.js';
+import {home_articles} from './config.js';
 let apiurl = home_articles.apihome+'?blog='+home_articles.blog;
+let apiurl_mm = home_articles.apihome+'?blog='+home_articles.blog+'&lang=mm';
 
-function articles(apiurl, lang) {
-    if (lang==='mm') {
-        let apiurl_mm = apiurl+'&lang=mm';
-        fetch(apiurl_mm)
-        .then((response)=>response.json())
-        .then((items)=>{
-            items.forEach(elm => {
-                const en_articles = document.querySelector('#articles');
-                while (en_articles.firstChild) {
-                    en_articles.removeChild(en_articles.firstChild);
-                }
-                const article = document.querySelector('#translated_articles');
-                article.innerHTML += '<article id="'+elm.id+'" class="article">'
+function articles(url,lang) {
+    fetch(url)
+    .then((response)=>response.json())
+    .then((items)=>{
+        items.forEach(elm => {
+            // console.log(elm);
+            if (lang==='mm') {
+                document.querySelector('#translated_articles').innerHTML += '<article id="'+elm.id+'" class="article">'
                 +'<a href="article.html?id='+elm.id+'" class="article-url">'
                 +'<div class="preview">'
                 +'<img class="og-image" src="'+elm.ogimg+'"/>'
@@ -23,17 +19,11 @@ function articles(apiurl, lang) {
                 +'<p class="exerpt">'+elm.exerpt+'</p>'
                 +'</div></a>'
                 +'</article>';
-            });
-        })
-    }else{
-        fetch(apiurl)
-        .then((response)=>response.json())
-        .then((items)=>{
-            console.log(items);
-            items.forEach(elm => {
-                const article = document.querySelector('#articles');
-                article.innerHTML += '<article id="'+elm.id+'" class="article">'
-                +'<a href="article.html?id='+elm.id+'&title='+elm.title+'" class="article-url">'
+                let enas = document.querySelector('#articles');
+                enas.parentNode.removeChild(enas);
+            } else {
+                document.querySelector('#articles').innerHTML += '<article id="'+elm.id+'" class="article">'
+                +'<a href="article.html?id='+elm.id+'" class="article-url">'
                 +'<div class="preview">'
                 +'<img class="og-image" src="'+elm.ogimg+'"/>'
                 +'</div> <div class="detail">'
@@ -42,13 +32,12 @@ function articles(apiurl, lang) {
                 +'<p class="exerpt">'+elm.exerpt+'</p>'
                 +'</div></a>'
                 +'</article>';
-            });
-        })
-    }
+            }
+        });
+    })
 }
-
 articles(apiurl);
-let btn = document.querySelector('#btn');
-btn.onclick = function() {
-    articles(apiurl,'mm');
+let do_translation = document.querySelector('#translate');
+do_translation.onclick = function() {
+    articles(apiurl_mm,'mm');
 }
