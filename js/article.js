@@ -1,22 +1,8 @@
-import {single_article, top_menu} from './config.js';
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const id = urlParams.get('id');
-let api_en = single_article.apiena+'id='+id+'&blog='+single_article.blog;
-let api_mm = single_article.apimma+'id='+id+'&blog='+single_article.blog;
-
-if(id){
-    article(api_en);
-}else{
-    document.querySelector('#lee').innerHTML='<h1>insufficient query request</h1>';
-}
-
 function article(api_en) {
     fetch(api_en)
     .then((res)=>res.json())
     .then((data)=>{
         let a = data[0];
-        // console.log(data);
 
         let og_title = document.createElement('meta');
         og_title.setAttribute('property', 'og:title');
@@ -38,16 +24,22 @@ function article(api_en) {
         og_description.setAttribute('content', a.exerpt.replace('<p>','').replace('</p>',''));
         document.head.appendChild(og_description);
 
-        document.querySelector('#article').innerHTML = '<article id="'+a.id+' to-translate" class="article">'
-        +'<img src="'+a.preview+'" class="og-img"/>'
-        +'<h1 class="title">'+a.title+'</h1>'
-        +'<div class="detail"><p class="info">Published on '+a.pub+', Updated at '+a.upd+' In '+a.cat+'</p></div>'
-        //+'<button id="translate">Translate to Burmese</button>'
-        +'<div class="content">'+a.content+'</div>'
-        +'</article>';
+        document.querySelector('#og-img').setAttribute('src',a.preview);
+        document.querySelector('#article-title').innerHTML = a.title;
+        document.querySelector('#published').innerHTML = '<span class="published">Published on: </span><span class="pub">'+a.pub+' </span>';
+        document.querySelector('#updated').innerHTML = '<span class="updated">Updated on: </span><span class="upd">'+a.upd+' </span>';
+        document.querySelector('#category').innerHTML = '<span class="category">in : </span><span class="cat">'+a.cat+' </span>';
+        document.querySelector('#article-content').innerHTML = a.content;
     })
 }
-let do_translation = document.querySelector('#translate');
-do_translation.onclick = function() {
-    article(api_mm);
+function empty_article() {
+    document.querySelector('#article-title').innerHTML= '<h1>insufficient query request</h1>';
+    document.querySelector('#article-info').innerHTML = 'Your request doesn\'t contain sufficient query string, so, there is no article content to show. Learn more about us.';
+    document.querySelector('#translate').innerHTML = '';
+    let siteHome = window.location.href;
+    document.querySelector('#article-content').innerHTML = '<a href="./BJSCMS.html">Back to Home</a>';
 }
+export {
+    article,
+    empty_article
+};
