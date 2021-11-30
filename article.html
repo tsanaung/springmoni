@@ -8,8 +8,28 @@
     <title>BIACMS</title>
 </head>
 <body>
-    <button id="translate">Translate to Burmese</button>
-    <section id="article"></section>
-    <script type="module" src="js/article.js"></script>
+    <section id="article">
+        <article id="t-article" class="article">
+            <header id="article-header">
+                <figure>
+                    <img id="og-img" class="featured" src="img/springmoni_article_featured.png"/>
+                </figure>
+                <h1 id="article-title" class="title">Please Wait., Article is loading. Contents on this server are re-render every seconds to up-to-date, thanks for your patient.</h1>
+                <p id="article-info" class="info">
+                    <span id="published" class="published">Published on 2021, </span><span id="updated" class="updated">Updated at 2021 </span><span id="category" class="category">In Category</span>
+                </p>
+            </header>
+            <figure id="translate" class="translate-btn">
+                <div id="preloader" class="loading">
+                    <p>LOADING</p>
+                </div>
+            </figure>
+            <div id="article-content" class="content"></div>
+        </article>
+    </section>
+    <script type="module">
+        import {single} from './core.js';
+        single();
+    </script>
 </body>
 </html>
