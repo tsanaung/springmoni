@@ -10,7 +10,7 @@ function single() {
 
     if(id){
         article(api_en);
-        document.querySelector('#translate').innerHTML = '<img id="do-translation" class="do-translation" src="img/springmoni_article_do-translate.png"/>';
+        document.querySelector('#translate').innerHTML = '<img id="do-translation" class="do-translation" src="https://tsanaung.github.io/springmoni/img/springmoni_article_do-translate.png"/>';
         document.querySelector('#translate').onclick = function() {
             document.querySelector('#translate').innerHTML = '';
             article(api_mm);
