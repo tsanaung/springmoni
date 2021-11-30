@@ -37,7 +37,7 @@ function empty_article() {
     document.querySelector('#article-info').innerHTML = 'Your request doesn\'t contain sufficient query string, so, there is no article content to show. Learn more about us.';
     document.querySelector('#translate').innerHTML = '';
     let siteHome = window.location.href;
-    document.querySelector('#article-content').innerHTML = '<a href="./BJSCMS.html">Back to Home</a>';
+    document.querySelector('#article-content').innerHTML = '<a href="../index.html">Back to Home</a>';
 }
 export {
     article,
