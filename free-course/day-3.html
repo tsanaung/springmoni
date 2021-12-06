@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SpringMoni</title>
+</head>
+<body>
+    <main smdata="articles">
+        <header>
+            <div id="brand" class="site-title">SpringMoni BurCourse Day-3</div>
+            <div id="menu" class="menu">
+                <span>Menu</span>
+                <section class="menu-container">
+                    <a href="index.html" class="menu-item">Home</a>
+                    <a href="index.html" class="menu-item">About (Under Construction)</a>
+                    <a href="https://www.facebook.com/773182576149006/posts/2450739165059997/" class="menu-item">Enroll</a>
+                    <a href="https://m.me/tsanaung.dev" class="menu-item">Contact</a>
+                    <span id="menu" class="menu-item">Close Menu</span>
+                </section>
+            </div>
+            <script>
+                document.querySelector('#menu').onclick = function() {
+                    if (document.querySelector('.menu-container').style.display === 'none') {
+                        document.querySelector('.menu-container').style.display = 'block'
+                    } else {
+                        document.querySelector('.menu-container').style.display = 'none'
+                    }
+                }
+            </script>
+        </header>
+
+        <div class="header-devider"></div>
+        
+        <section id="articles" class="article main">
+            <img id="article-preview" class="article-preview" src="img/springmoni_article_featured.png">
+            <h1 id="article-title">Article Title</h1>
+            <articleData></articleData>
+            <div class="article-info">
+                <span id="article-info">Published on 2021, Updated at December 2021 in Category</span>
+            </div>
+            <exerpt></exerpt>
+            <div id="translate"></div>
+            <div id="content"><p>Yesterday I talked about content templates and how to get data. Today we're going to look at the content creation part of the data we learned from yesterday. Let's start with a simple approach.</p><p>Data is an important part of any monetization website, so data is a priority. But it's important to understand that data is not content. It's a must have, for any Affiliate, promoting any program. Content does not exist without data. As we will learn about content publishing and monetization, content is essential, and data is one of the most basic requirements for content.</p><p>It's predicted that what we have just learned is how to create a static website. Server-Side Rendering (SSR) is a form of dynamic website creation that creates and publishes content with server side code. At BarCourse, I have already said that you will not have web development using languages ​​and frameworks. But with the salient advantages, you must know some of the disadvantages as well. So do not be discouraged if you do not understand. There are only gods in the old books that I learned from birth. There is no reason to be discouraged if you do not understand that you are not God. You should not be discouraged if you do not want to try to understand what you do not understand. If you do not get discouraged, you are only fooling yourself.</p><p>When we create data as content, we create the content that we want to create into content that can be displayed in a web browser. Creating HTML documents requires some basic understanding of HTML (Hyper Text Markup Language).</p><p>You will not speak the language, so speak as lightly as you would in a bar. Figure ပုံ shows how to build a sample HTML document.</p><p>& lt;! DOCTYPE html> declare that the document type is HTML; & lt; html> is the root element of the HTML page. (If you don't know what an element is here, I'll explain later.) The & lt; head> element is an element that contains meta structures of an HTML page (meta is not Facebook's) The & lt; title> in the & lt; title> is the title of the HTML page (possibly the title of the content).</p><p>The browser will not display the document type, root element, head, etc. These can be easily considered as information in an HTML document; Only the favicon (site icon) and title can be seen in the output of the web browser</p><p>You can enter content to be displayed by the web browser in the & lt; body> tag; What is a "tag"? Tag is a keyword used to describe content in HTML. Most tags have a start tag and an end tag. Content is written between the two.</p><p>It can be easily saved as & lt; tag> Content & lt; / tag>. Such organized content is called an element. You need to add other elements to the element. This is called a nested element. An element without content without an end tag is called an empty element, for example & lt; br /> & lt; hr /></p><p>Note that => tags are not displayed by the browser; Tags are used only to form elements. The browser will only display the content. Web content creation can be easily thought of as creating elements of your own design</p><p>Attributes => Used in the element's start tag to enter the required information for the element. For example, you can use the & imt> tag to insert an image as an empty element; Insert the data (image link) of the image you want to insert into the & lt; img> element using the attribute src. Example = = <br/>& Lt; img src = "Image link"></p><p>Attributes can be easily defined as & Lt; tag attribute = "value"> Content & tag; tag />; If you want to use more than one attribute, you can use spaces between them. If you want to learn more, you can do a Google search like HTML attribute reference</p><p>At the very least, you need to know these concepts to create web content. The course will cover how to create / write a content / element type</p><p>Once you understand this, you can create a Web Content Creation tutorial. Let's create an HTML document that looks like the image below. Instructions will be given in the training group chat.</p><p>Well, it's time to back BarCourse!</p></div>
+        </section>
+    </main>
+    <script type="module">
+        import {single} from 'https://tsanaung.github.io/springmoni/js/main.js';
+        single();
+    </script>
+</body>
+</html>
