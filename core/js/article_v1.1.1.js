@@ -21,7 +21,7 @@ function article_data(api) {
             document.querySelector('#article-title').textContent = a.title;
             document.querySelector('articleData').innerHTML = '<span class="sponsored">Sponsored By SpringMoni</span>';
             document.querySelector('#article-info').textContent = 'Published on '+a.pub+', Updated at '+a.upd+' In '+a.cat;
-            document.querySelector('exerpt').textContent = a.exerpt;
+            // document.querySelector('exerpt').textContent = a.exerpt;
             document.querySelector('#content').innerHTML = a.content;
         }
     )
