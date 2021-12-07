@@ -34,7 +34,7 @@ function empty_article(data) {
 }
 
 function translate_article(data,id) {
-    document.querySelector('#translate').innerHTML = '<img id="do-translation" class="do-translation" src="img/springmoni_article_do-translate.png"/>';
+    document.querySelector('#translate').innerHTML = '<img id="do-translation" class="do-translation" src="https://tsanaung.github.io/springmoni/free-course/img/springmoni_article_do-translate.png"/>';
     document.querySelector('#translate').onclick = function() {
         document.querySelector('#translate').innerHTML = '';
         let translation_api = 'https://script.google.com/macros/s/AKfycbxOFbeAyTFuRL7TbXPGDK_iplzzi7n-xk_HVJX5sR3hYTTBr8OoZmBzV-w3u4CXotA/exec?blog='+data+'&id='+id;
