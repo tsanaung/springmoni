@@ -12,5 +12,5 @@ if (data_method === 'article') {
 // ပြင်ရမယ့်နေရာမှာ blog name ထည့်ရမယ်။
 // ဥပမာ let data = 'springcondor'; လို့ ဖြစ်သွားမယ်။
 // Javascript မှာ variable တွေ declare တဲ့အခါ let, const, var စသဖြင့် keyword တွေ သုံးရတယ်။
-// ဒီမှာ let ဆိုတာ JavaScript မှာ variable သတ်မှတ်ဖို့သုံးတဲ့ keyword
-// ဥပမာ let variable_name = 'value'; အဲပုံစံရေးထားတာ
+// ဒီမှာ let ဆိုတာ JavaScript မှာ variable သတ်မှတ်ဖို့သုံးတဲ့ keyword ဥပမာ let variable_name = 'value'; အဲပုံစံရေးထားတာ
+// ခုရေးထားတဲ့စာတွေ (စာကြောင်းရှေးမှာ // ပါတဲ့စာတွေ) မကူးနဲ့၊ အဲဒါ comment ရေးထားတာ
