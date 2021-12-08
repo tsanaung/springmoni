@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://tsanaung.github.io/springmoni/gen/content.html" />
+    <meta property="og:type"               content="HTML Content Creator" />
+    <meta property="og:title"              content="SpringMoni HTML Content Generator V-1.0.0" />
+    <meta property="og:description"        content="HTML Content Creator for SpringMoni Site-Script" />
+    <meta property="og:image"              content="https://tsanaung.github.io/springmoni/img/springmoni_article_featured.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>SpringMoni HTML Content Generator V-1.0.0</title>
+</head>
+<body>
+    <div id="contains">
+        <label for="en_title" class="title">English Title</label>
+        <input type="text" id="en_title" name="en_title" class="title_input">
+        <label for="mm_title" class="title">Burmese Title</label>
+        <input type="text" id="mm_title" name="mm_title" class="title_input">
+
+        <label for="preview" class="preview">URL</label>
+        <input type="url" id="url" name="url" class="preview_input">
+
+        <label for="en_content" class="content">English Content <hr/>image => i*https://photo.link/photo.jpg*i</label>
+        <textarea type="text" id="en_content" name="en_content" class="content_input" rows="12"></textarea>
+        <label for="mm_content" class="content">Burmese Content <hr/>image => i*https://photo.link/photo.jpg*i</label>
+        <textarea type="text" id="mm_content" name="mm_content" class="content_input" rows="12"></textarea>
+
+        <button id="submit" class="generate">Generate</button>
+    </div>
+
+    <div class="result">
+        <textarea class="result_text" type="text" rows="15"></textarea>
+        <button class="copy_btn"><i class="fas fa-clipboard"></i></button>
+        <p><strong>Disclaimer:</strong> Alpha release, under development & need to add many features</p>
+        <p>&copy;2021 | Tsan Aung| All Rights Reserved<hr/>The Source Code is Licnesed under MIT</p>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
