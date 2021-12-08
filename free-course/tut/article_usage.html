@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ဒီနေရာပြင်</title>
+</head>
+<body>
+    <main data-method="article">
+        <header>
+            <div id="brand" class="site-title">ဒီနေရာပြင်</div>
+            <div id="menu" class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <section class="menu-container">
+                    <a href="index.html" class="menu-item">Home</a>
+                    <a href="ဒီနေရာပြင်" class="menu-item">ဒီနေရာပြင်</a>
+                    <a href="ဒီနေရာပြင်" class="menu-item">ဒီနေရာပြင်</a>
+                    <a href="ဒီနေရာပြင်" class="menu-item">ဒီနေရာပြင်</a>
+                    <span id="menu" class="menu-item">Close Menu</span>
+                </section>
+            </div>
+            <script>
+                document.querySelector('#menu').onclick = function() {
+                    if (document.querySelector('.menu-container').style.display === 'none') {
+                        document.querySelector('.menu-container').style.display = 'block'
+                    } else {
+                        document.querySelector('.menu-container').style.display = 'none'
+                    }
+                }
+            </script>
+        </header>
+
+        <div class="header-devider"></div>
+        
+        <section id="articles" class="article main">
+            <img id="article-preview" class="article-preview" src="https://tsanaung.github.io/springmoni/img/springmoni_article_featured.png">
+            <h1 id="article-title">ဒီနေရာပြင်</h1>
+            <articleData></articleData>
+            <div class="article-info">
+                <span id="article-info">ဒီနေရာပြင်</span>
+            </div>
+            <exerpt></exerpt>
+            <div id="translate"></div>
+            <div id="content">ဒီနေရာပြင်</div>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
