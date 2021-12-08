@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ဒီနေရာမှာ PAGE TITLE</title>
+</head>
+<body>
+    <main data-method="home" class="wrapper">
+        <header>
+            <div id="brand" class="site-title">ဒီနေရာမှာ PAGE TITLE OR CONTENT TITLE</div>
+            <div id="menu" class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <section class="menu-container">
+                    <a href="#translate" class="menu-item" id="translate">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#333" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 7h7m-2 -2v2a5 8 0 0 1 -5 8m1 -4a7 4 0 0 0 6.7 4" />
+                            <path d="M11 19l4 -9l4 9m-.9 -2h-6.2" />
+                        </svg> Translate to Burmese
+                    </a>
+                    <a href="index.html" class="menu-item">Home</a>
+                    <a href="ဒီနေရာမှာ_MENU_LINK" class="menu-item">ဒီနေရာမှာ MENU NAME</a>
+                    <a href="ဒီနေရာမှာ_MENU_LINK" class="menu-item">ဒီနေရာမှာ_MENU_NAME</a>
+                    <a href="ဒီနေရာမှာ_MENU_LINK" class="menu-item">ဒီနေရာမှာ MENU NAME</a>
+                    <span id="menu" class="menu-item">Close Menu</span>
+                </section>
+            </div>
+            <script>
+                document.querySelector('#menu').onclick = function() {
+                    if (document.querySelector('.menu-container').style.display === 'none') {
+                        document.querySelector('.menu-container').style.display = 'block'
+                    } else {
+                        document.querySelector('.menu-container').style.display = 'none'
+                    }
+                }
+            </script>
+        </header>
+
+        <div class="header-devider"></div>
+
+        <div id="lsb" class="sidebar-left hidesm">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="https://github.com/tsanaung/springmoni" class="menu-item">Project</a>
+        </div>
+        <section id="articles" class="articles main">
+            ဒီနေရာမှာ CONTENT (ENGLISH VERSION RECOMMANDED), ခေါင်းစဉ်၊ ARTICLES INFO, EXCERPT ... ဘာညာ
+        </section>
+        <div id="rsb" class="sidebar-right">
+            ဒီနေရာမှာ RIGHT SIDEBAR အတွက် ထည့်မယ့် CONTENT နဲ့ FOOTER အတွက် COPYRIGHT ဘာညာ
+        </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
