@@ -8,8 +8,8 @@ function get_articles(api) {
             +'<a href="article.html?id='+elm.id+'" class="article-url">'
             +'<img class="featured-image" src="'+elm.ogimg+'"/>'
             +'<h1 class="article-title">'+elm.title+'</h1>'
-            +'<span id="article-info" class="article-info">Published on '+elm.pub+' in '+elm.cat+'</span>'
-            +'<p class="exerpt">'+elm.exerpt+'</p>'
+            +'<p id="article-info" class="article-info">Published on '+elm.pub+' in '+elm.cat+'</p>'
+            //+'<p class="exerpt">'+elm.exerpt+'</p>'
             +'</a></article>';
         })
     })
