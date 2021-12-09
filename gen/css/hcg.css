@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-item {
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: block;
+    font-weight: 300;
+    color: #333;
+}
+.menu-container {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding: 1rem;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 3.3rem;
+    margin-top: 0;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+}
+.header-devider {
+    display: inline-block;
+    height: 3.3rem;
+}
+.toolbox {
+    border: none;
+    padding: 1rem;
+    max-width: 100%;
+    display: flex;
+}
+.tool-icon {
+    width: auto;
+    height: 2.4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15%;
+    font-size: 1rem;
+    background-color: slateblue;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0.15rem 0.3rem;
+    aspect-ratio: 1/1;
+}
+#output > photo {
+    color: indigo;
+    text-transform: lowercase;
+}
+#output > * {
+    display: block;
+    padding: 0.51rem 1rem;
+    max-width: 75%;
+    word-wrap: break-word;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: lemonchiffon;
+}
+.container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.dorgen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15%;
+}
+#do-rhg {
+    height: 2.4rem;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    background-color: powderblue;
+}
+#result {
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+.final-result {
+    display: inline-flex;
+    min-width: 75%;
+    max-width: 100%;
+    border: none;
+    border-radius: 0.33rem;
+    background-color: #333;
+    color: skyblue;
+    padding: 1rem;
+}
