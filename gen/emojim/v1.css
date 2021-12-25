@@ -1,0 +1,277 @@
+t1 {
+    content:  url(svg/ka.svg);
+}
+
+t2 {
+    content:  url(svg/kha.svg);
+}
+
+t3 {
+    content:  url(svg/ga.svg);
+}
+
+t4 {
+    content:  url(svg/gag.svg);
+}
+
+t5 {
+    content:  url(svg/nga.svg);
+}
+
+t6 {
+    content:  url(svg/sa.svg);
+}
+
+t7 {
+    content:  url(svg/salain.svg);
+}
+
+t8 {
+    content:  url(svg/za.svg);
+}
+
+t9 {
+    content:  url(svg/zam.svg);
+}
+
+t10 {
+    content:  url(svg/nya.svg);
+}
+
+t11 {
+    content:  url(svg/talin.svg);
+}
+
+t12 {
+    content:  url(svg/htb.svg);
+}
+
+t13 {
+    content:  url(svg/dag.svg);
+}
+
+t14 {
+    content:  url(svg/dam.svg);
+}
+
+t15 {
+    content:  url(svg/nag.svg);
+}
+
+t16 {
+    content:  url(svg/ta.svg);
+}
+
+t17 {
+    content:  url(svg/hta.svg);
+}
+
+t18 {
+    content:  url(svg/da.svg);
+}
+
+t19 {
+    content:  url(svg/dac.svg);
+}
+
+t20 {
+    content:  url(svg/na.svg);
+}
+
+t21 {
+    content:  url(svg/pa.svg);
+}
+
+t22 {
+    content:  url(svg/fa.svg);
+}
+
+t23 {
+    content:  url(svg/va.svg);
+}
+
+t24 {
+    content:  url(svg/ba.svg);
+}
+
+t25 {
+    content:  url(svg/ma.svg);
+}
+
+t26 {
+    content:  url(svg/ya.svg);
+}
+
+t27 {
+    content:  url(svg/yg.svg);
+}
+
+t28 {
+    content:  url(svg/la.svg);
+}
+
+t29 {
+    content:  url(svg/wa.svg);
+}
+
+t30 {
+    content:  url(svg/tha.svg);
+}
+
+t31 {
+    content:  url(svg/ha.svg);
+}
+
+t32 {
+    content:  url(svg/lag.svg);
+}
+
+t33 {
+    content:  url(svg/ah.svg);
+}
+
+t34 {
+    content:  url(svg/dac.svg);
+}
+
+s1 {
+    content:  url(svg/y2.svg);
+    margin-left:-22px;
+}
+
+s2 {
+    content:url(svg/y1.svg);
+    margin-left:-22px;
+}
+
+s3 {
+    content:url(svg/yy.svg);
+    margin-left: -22px;
+}
+
+s4 {
+    content:url(svg/ym1.svg);
+    margin-left:-14px;
+}
+
+s5 {
+    content:url(svg/ym2.svg);
+    margin-left:-14px;
+}
+
+s6 {
+    content:url(svg/ym3.svg);
+    margin-left:-15px;
+}
+
+s7 {
+    content:url(svg/hhck.svg);
+    margin-left:-13px;
+}
+
+s8 {
+    content:url(svg/2ck.svg);
+    margin-left:-13px;
+}
+
+s9 {
+    content:url(svg/1ck.svg);
+    margin-left:-15px;
+}
+
+s10 {
+    content:url(svg/tat.svg);
+    margin-left:-12px;
+    /* margin-right:3px; */
+}
+
+s11 {
+    content:url(svg/lot.svg);
+    margin-left:-12px;
+    /* margin-right:3px; */
+}
+
+s12 {
+    content:url(svg/lotsk.svg);
+    margin-left:-10px;
+    margin-right:-3px;
+}
+
+s13 {
+    content:url(svg/d2.svg);
+    margin-left:-3px;
+    margin-right:-5px;
+}
+
+s14 {
+    content:url(svg/yc.svg);
+    margin-left:-3px;
+    /* margin-right:3px; */
+}
+
+s15 {
+    content:url(svg/6.svg);
+}
+
+s16 {
+    content:url(svg/wc.svg);
+    margin-left:-8px;
+}
+
+s17 {
+    content:url(svg/outkm.svg);
+    margin-left:-5px;
+}
+
+s18 {
+    content:url(svg/ttt.svg);
+    margin-left:-7px;
+    margin-right:2px;
+}
+
+s19 {
+    content:url(svg/yp.svg);
+    margin-left:-8px;
+}
+
+#inpstr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.input {
+    width: 78%;
+    height: 24vw;
+    border: solid 1px blueviolet;
+    padding: 1rem;
+    flex-direction: row;
+}
+#oupstr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87%;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 6%;
+}
+.btn {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 42vw;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.instruction {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: center;
+}
